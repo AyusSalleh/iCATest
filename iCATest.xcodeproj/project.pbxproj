@@ -17,7 +17,6 @@
 		05CC890329C168A6000D6EBD /* iCATestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC890229C168A6000D6EBD /* iCATestUITests.swift */; };
 		05CC890529C168A6000D6EBD /* iCATestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC890429C168A6000D6EBD /* iCATestUITestsLaunchTests.swift */; };
 		05CC891329C16954000D6EBD /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC891229C16954000D6EBD /* R.generated.swift */; };
-		05CC891529C169FA000D6EBD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 05CC891429C169F9000D6EBD /* data.json */; };
 		05CC891829C16A1F000D6EBD /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC891729C16A1F000D6EBD /* SceneDelegateExtension.swift */; };
 		05CC891C29C16A6A000D6EBD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC891B29C16A6A000D6EBD /* Helper.swift */; };
 		05CC891E29C16A97000D6EBD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC891D29C16A97000D6EBD /* Constant.swift */; };
@@ -39,6 +38,7 @@
 		05CC894329C16D45000D6EBD /* CommonHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CC894229C16D45000D6EBD /* CommonHeaderView.xib */; };
 		05CC894529C16D8D000D6EBD /* CommonTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC894429C16D8D000D6EBD /* CommonTextFieldView.swift */; };
 		05CC894729C16D9D000D6EBD /* CommonTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CC894629C16D9D000D6EBD /* CommonTextFieldView.xib */; };
+		05CC894B29C1A2F7000D6EBD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 05CC894A29C1A2F7000D6EBD /* data.json */; };
 		60C5BDAF58DF7F79C9EE4BEA /* Pods_iCATestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0B2A225DF38D6C1A8FAC2E /* Pods_iCATestTests.framework */; };
 		8245A39163DA1DF8A2A723F7 /* Pods_iCATest_iCATestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8823E6F888107182ABF55916 /* Pods_iCATest_iCATestUITests.framework */; };
 		CAE3935D9BC1A5DC463355F0 /* Pods_iCATest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BB4BD0735DA6C2618181DD /* Pods_iCATest.framework */; };
@@ -76,7 +76,6 @@
 		05CC890229C168A6000D6EBD /* iCATestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCATestUITests.swift; sourceTree = "<group>"; };
 		05CC890429C168A6000D6EBD /* iCATestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCATestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05CC891229C16954000D6EBD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		05CC891429C169F9000D6EBD /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../../App Test/data.json"; sourceTree = "<group>"; };
 		05CC891729C16A1F000D6EBD /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 		05CC891B29C16A6A000D6EBD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		05CC891D29C16A97000D6EBD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		05CC894229C16D45000D6EBD /* CommonHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonHeaderView.xib; sourceTree = "<group>"; };
 		05CC894429C16D8D000D6EBD /* CommonTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextFieldView.swift; sourceTree = "<group>"; };
 		05CC894629C16D9D000D6EBD /* CommonTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTextFieldView.xib; sourceTree = "<group>"; };
+		05CC894A29C1A2F7000D6EBD /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		1455FFD67A6FF75A5E9EF3CC /* Pods-iCATestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCATestTests.debug.xcconfig"; path = "Target Support Files/Pods-iCATestTests/Pods-iCATestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C0B2A225DF38D6C1A8FAC2E /* Pods_iCATestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCATestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61EE61500B023361671CCAD8 /* Pods-iCATest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCATest.release.xcconfig"; path = "Target Support Files/Pods-iCATest/Pods-iCATest.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		05CC88E029C168A5000D6EBD /* iCATest */ = {
 			isa = PBXGroup;
 			children = (
-				05CC891429C169F9000D6EBD /* data.json */,
+				05CC894A29C1A2F7000D6EBD /* data.json */,
 				05CC891229C16954000D6EBD /* R.generated.swift */,
 				05CC88E129C168A5000D6EBD /* AppDelegate.swift */,
 				05CC88E529C168A5000D6EBD /* ViewController.swift */,
@@ -417,8 +417,8 @@
 				05CC893729C16BA4000D6EBD /* DetailViewController.xib in Resources */,
 				05CC88EB29C168A6000D6EBD /* Assets.xcassets in Resources */,
 				05CC893329C16B99000D6EBD /* HomeViewController.xib in Resources */,
+				05CC894B29C1A2F7000D6EBD /* data.json in Resources */,
 				05CC88E929C168A5000D6EBD /* Main.storyboard in Resources */,
-				05CC891529C169FA000D6EBD /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
