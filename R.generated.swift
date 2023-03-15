@@ -139,6 +139,20 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `data.json`.
+    static let dataJson = Rswift.FileResource(bundle: R.hostingBundle, name: "data", pathExtension: "json")
+
+    /// `bundle.url(forResource: "data", withExtension: "json")`
+    static func dataJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.dataJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
@@ -170,6 +184,82 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
+  struct nib {
+    /// Nib `CommonHeaderView`.
+    static let commonHeaderView = _R.nib._CommonHeaderView()
+    /// Nib `CommonTextFieldView`.
+    static let commonTextFieldView = _R.nib._CommonTextFieldView()
+    /// Nib `DetailViewController`.
+    static let detailViewController = _R.nib._DetailViewController()
+    /// Nib `HomeTableViewCell`.
+    static let homeTableViewCell = _R.nib._HomeTableViewCell()
+    /// Nib `HomeViewController`.
+    static let homeViewController = _R.nib._HomeViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CommonHeaderView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.commonHeaderView) instead")
+    static func commonHeaderView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.commonHeaderView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CommonTextFieldView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.commonTextFieldView) instead")
+    static func commonTextFieldView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.commonTextFieldView)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "DetailViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.detailViewController) instead")
+    static func detailViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.detailViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "HomeTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.homeTableViewCell) instead")
+    static func homeTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.homeTableViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "HomeViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.homeViewController) instead")
+    static func homeViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.homeViewController)
+    }
+    #endif
+
+    static func commonHeaderView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.commonHeaderView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func commonTextFieldView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.commonTextFieldView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func detailViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.detailViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func homeTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> HomeTableViewCell? {
+      return R.nib.homeTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HomeTableViewCell
+    }
+
+    static func homeViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.homeViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -189,6 +279,67 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _CommonHeaderView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CommonHeaderView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _CommonTextFieldView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CommonTextFieldView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _DetailViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "DetailViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _HomeTableViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "HomeTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> HomeTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? HomeTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _HomeViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "HomeViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
